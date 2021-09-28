@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "760182705203",
+    "firebase_url": "https://solace-bafbd-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "solace-bafbd",
+    "storage_bucket": "solace-bafbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760182705203:android:27b2bbf58130daaec46746",
+        "android_client_info": {
+          "package_name": "com.example.solace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760182705203-jo835agl5tdt273iqq5ndjj4dmh7s33l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA5Z8UW8UznS_Uv2f6OSnNY_EUi-YqwpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760182705203-jo835agl5tdt273iqq5ndjj4dmh7s33l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

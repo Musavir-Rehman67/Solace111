@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coreData">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/coredata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Core Data"
+                android:textStyle="italic"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/sol"
+                android:textSize="25sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/coredata"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+
+        <!--        Begining of Rate your mood-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sol"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:text="Rate your mood today \n out of 10"
+                android:textSize="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rym"
+                >
+
+                <SeekBar
+                    android:id="@+id/seekRM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="5dp"
+                    android:max="10"/>
+
+                <TextView
+                    android:id="@+id/RMR"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/sol"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rym"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+
+
+
+        <!--        Begining of how well you coped today-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sol"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"
+                android:text="Rate how well you coped today \n out of 10"
+                android:textSize="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/HWYCT"
+                >
+
+                <SeekBar
+                    android:id="@+id/seekcoped"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="5dp"
+                    android:max="10"/>
+
+                <TextView
+                    android:id="@+id/copedR"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/sol"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/HWYCT"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+
+
+        <!--        Begining of quality of sleep-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sol"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:text="Rate the quality of your sleep \n out of 10"
+                android:textSize="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/QOS"
+                >
+
+                <SeekBar
+                    android:id="@+id/seekQsleep"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="5dp"
+                    android:max="10"/>
+
+                <TextView
+                    android:id="@+id/qsleepR"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/sol"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/QOS"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+        <!--        Begining of how long did you exercise-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sol"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:text="How long did you exercise \n in minutes"
+                android:textSize="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/exercise"
+                >
+
+                <SeekBar
+                    android:id="@+id/seekexer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="5dp"
+                    android:max="100"/>
+
+                <TextView
+                    android:id="@+id/exerR"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/sol"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/exercise"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+
+        <!--       Duration of sleep-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sol"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:text="How long did you sleep in hours"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/sleepDur"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="@color/sol"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textview5"/>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/sleepDur"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+
+
+        <!--        Begining of meditation-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sol"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:text="Did you take your medication"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:id="@+id/radioCore"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/textview6">
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:checked="true"
+                    android:textColor="@color/sol"/>
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:checked="false"
+                    android:textColor="@color/sol"/>
+                <RadioButton
+                    android:id="@+id/radioNA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:checked="false"
+                    android:textColor="@color/sol"/>
+
+            </RadioGroup>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/radioCore"
+                android:layout_marginTop="5dp"
+                android:background="#666666"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/coreNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:backgroundTint="@color/sol"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

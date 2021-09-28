@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StayWellStratigies">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stay Well Stratigies"
+        android:textColor="@color/sol"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="45dp"
+        android:background="#666666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/spinnerPosThnk"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="45dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-45dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/positivethinking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-20dp"
+            android:padding="5dp"
+            android:layout_marginTop="50dp"
+            android:text="Positive Thinking"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnertherapies"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/therapies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Alternative Therapies"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerRelax"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="140dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/relaxation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Relaxation"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerPlenty"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/powater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Plenty Of Water"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerAdequate"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="220dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/adesleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Adequate Sleep"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerSocial"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="260dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/socialsupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Social Support"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerHealthy"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="300dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/healthymeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Healthy Meals"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerProf"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="340dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/professionalsupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Professional Support"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerTimeout"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="380dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/timeoutside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Time Outside"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerLookout"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="420dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/lookingoutside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Looking Outside"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/spinnerActiv"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="460dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/activitieswithothers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Activities With Others"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lll" >
+        <TextView
+            android:id="@+id/spinnerManage"
+            android:layout_width="17sp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="500dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            app:backgroundTint="@color/sol"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-38dp"
+            android:background="@drawable/ic_baseline_arrow_right_24" />
+        <CheckBox
+            android:id="@+id/manageconflict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="-43dp"
+            android:text="Managing Conflict"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextsws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/sol"
+        android:layout_below="@id/lll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="120dp"/>
+
+</RelativeLayout>
